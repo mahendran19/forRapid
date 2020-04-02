@@ -1,2 +1,2 @@
 # forRapid
-https://github.com/mahendran19/forRapid.git
+https://mahendran19.github.io/forRapid/
