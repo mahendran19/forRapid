@@ -1,27 +1,35 @@
-'''n=int(input("How many persons:"))
-kl=[]
-vl=[]
-c={}
-for i in range(1,n+1):
-    name=input("Enter the name:")
-    val=int(input("Enter the values:"))
-    kl.append(name)
-    vl.append(val)
-print(kl)
-print(vl)
-z=zip(kl,vl)
-result=dict(z)
-print(result)'''
 
-
+print("                 METHOD 1                      ")
+print("-------------------------------------------------")
+print('\n')
 d={"Rick": 85, "Amit": 42, "George": 53, "Tanya": 60, "Linda": 35}
-res=0
+print("d=",d)
 c=d.values()
-li=list(c)
-print(li)
-for i in li:
-    i=res+i
-    res=i
-print(i)
-    
+print(c)
+print("Result is=",sum(c))
+print('\n')
+print('\n')
+
+
+print("                 METHOD 2                      ")
+print("-------------------------------------------------")
+
+
+n=int(input("How many dictionary items :"))
+l1=[]
+l2=[]
+for i in range(n):
+    keys=input("Enter the key name:")
+    values=int(input("Enter the values:"))
+    l1.append(keys)
+    l2.append(values)
+a=zip(l1,l2)
+d=dict(a)
+print("d=",d)
+
+result=d.values()
+print("Result is=:",sum(result))
+
+
+
 
